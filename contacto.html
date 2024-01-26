@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puerto Funes Propiedades - Contacto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/whatsapp.css" />
+    <script src="js/menu.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("CYgaeAeVZmfaobGxf");
+    </script>
+  </head>
+
+  <body>
+    <a
+      id="whatsapp-button"
+      href="https://api.whatsapp.com/send?phone=5493416153900&text=%C2%A1Hola!%20Quisiera%20hacer%20una%20consulta%20"
+      target="_blank"
+    >
+      <img class="whatsapp-button-img" src="img/whatsapp-button.png" />
+    </a>
+
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <a href="index.html">
+            <img
+              src="img/puerto-funes-propiedades.jpg"
+              alt="Puerto Funes Propiedades"
+              id="logo"
+            />
+          </a>
+        </div>
+        <nav>
+          <ul class="menu-items">
+            <li><a class="menu-item" href="index.html">Home</a></li>
+            <li>
+              <a class="menu-item" href="sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li><a class="menu-item" href="anuncios.html">Anuncios</a></li>
+            <li><a class="menu-item" href="contacto.html">Contacto</a></li>
+          </ul>
+          <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+              <span class="bar-1"></span>
+              <span class="bar-2"></span>
+              <span class="bar-3"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contact">
+      <form id="contact-form" name="contact">
+        <div class="form-content">
+          <label for="name">Nombre y Apellido</label>
+          <input type="name" name="name" id="name" autocomplete="on" required />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="on"
+            required
+          />
+          <label for="subject">Asunto</label>
+          <input type="text" name="subject" id="subject" autocomplete="off" />
+          <label for="message">Mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            autocomplete="off"
+            required
+          ></textarea>
+          <button id="submit-button">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Puerto Funes Propiedades</p>
+        <p>Sitio Web desarrollado por <span>Facundo Jalil</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
