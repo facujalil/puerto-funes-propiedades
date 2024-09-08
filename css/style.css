@@ -370,16 +370,17 @@ footer .footer-content {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .about-us-img-container {
   width: 55%;
-  height: 100%;
 }
 
 #about-us img {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 #about-us p {
@@ -654,7 +655,6 @@ textarea:focus {
 
   .about-us-container {
     flex-direction: column;
-    justify-content: center;
   }
 
   .about-us-img-container {
