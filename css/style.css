@@ -96,11 +96,11 @@ nav {
   list-style: none;
 }
 
-.active {
+a.active {
   color: #02979d;
 }
 
-.hamburger-menu {
+.hamburger-menu-button {
   display: none;
 }
 
@@ -697,50 +697,47 @@ textarea:focus {
 
   nav {
     position: absolute;
-    width: 100%;
-    background-color: #2b2926;
-  }
-
-  .menu-items {
     z-index: 1;
     display: none;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
     width: 100%;
     height: 100vh;
     background-color: #2b2926;
   }
 
-  .menu-items.activated {
+  nav.open {
     display: flex;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
   }
 
   .menu-items li a {
     font-size: 1.15em;
   }
 
-  .hamburger-menu-container {
+  .hamburger-menu-button {
     position: absolute;
     top: 1.875rem;
     right: 0;
     z-index: 99;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 0.625rem;
     height: 3rem;
     margin-right: 7.5%;
     color: #ffffff;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
   }
 
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem;
-  }
-
-  .hamburger-menu span {
+  .hamburger-menu-button span {
     width: 1.75rem;
     height: 0.1875rem;
     background-color: #ffffff;
