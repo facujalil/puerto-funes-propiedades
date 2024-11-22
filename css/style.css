@@ -258,7 +258,7 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.625rem;
-  box-shadow: inset 0px -130px 50px rgb(0, 0, 0, 0.5);
+  box-shadow: inset 0px -130px 50px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -520,7 +520,7 @@ textarea:focus {
 
 #property-detail h1,
 #property-detail h2 {
-  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #property-detail h1 {
